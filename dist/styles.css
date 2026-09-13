@@ -77,3 +77,27 @@
   [data-theme="dark"] .pyramid{filter:drop-shadow(0 16px 26px #0005)}
 }
 @media print{.theme-toggle{display:none}}
+
+/* Original image and archive page */
+nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:6px}
+.original-section{padding-top:42px;padding-bottom:76px}
+.original-heading{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:end;border-top:1px solid var(--ink);padding:28px 0}
+.original-heading h2{font-size:clamp(32px,4vw,52px);font-weight:500;line-height:1.12;letter-spacing:-.045em;margin:14px 0 0}
+.original-heading h1{margin-top:18px}
+.original-heading h2 em{font-family:'Playfair Display',Georgia,serif;font-weight:500;color:var(--coral)}
+.original-heading p{margin:0 0 8px;line-height:1.65;color:var(--text)}
+.original-heading .lead{color:var(--ink);font-weight:700;letter-spacing:.03em}
+.original-link{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:8px;text-decoration:none}
+.original-link:hover{border-color:var(--coral);color:var(--coral)}
+.original-photo{width:50%;max-width:439px;margin:0 auto;min-width:0}
+.original-photo>a{display:block;border:1px solid var(--line);background:#fff;cursor:zoom-in}
+.original-photo img{display:block;width:100%;height:auto}
+@media(max-width:520px){.original-photo{width:100%}}
+.original-photo figcaption,.original-caption{margin:14px 0 0;color:var(--muted);font-size:13px;line-height:1.6}
+.original-description{max-width:820px;margin:42px auto 0;font-size:16px;line-height:1.8;color:var(--text)}
+.original-description h2{color:var(--ink);font-weight:500;font-size:30px}
+@media(max-width:800px){.original-heading{grid-template-columns:1fr;gap:18px}.original-heading h2 br{display:none}}
+@media(max-width:520px){.original-section{padding-top:24px;padding-bottom:52px}.original-heading{padding-top:22px}.header-actions nav{overflow-x:auto;justify-content:flex-start;padding-bottom:3px}.header-actions nav a{white-space:nowrap}.original-description{margin-top:28px}}
+@media screen{[data-theme="dark"] .original-heading{border-color:var(--line)}}
+@media print{.original-section{break-after:page}.original-heading{grid-template-columns:1fr 1fr}}
+@media(max-width:800px){.header-actions nav{flex-wrap:wrap;justify-content:flex-start;gap:12px 18px;overflow:visible}}
